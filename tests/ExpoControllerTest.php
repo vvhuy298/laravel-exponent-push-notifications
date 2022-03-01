@@ -27,7 +27,6 @@ class ExpoControllerTest extends TestCase
      * Sets up the expo controller with the given expo channel.
      *
      * @param  ExpoRepository  $expoRepository
-     *
      * @return array
      */
     protected function setupExpo(ExpoRepository $expoRepository)
@@ -68,7 +67,8 @@ class ExpoControllerTest extends TestCase
         ];
     }
 
-    /** @test
+    /**
+     * @test
      *
      * @param $expoRepository
      *
@@ -102,7 +102,8 @@ class ExpoControllerTest extends TestCase
         }
     }
 
-    /** @test
+    /**
+     * @test
      *
      * @param $expoRepository
      *
@@ -149,7 +150,8 @@ class ExpoControllerTest extends TestCase
         $this->assertEquals('failed', $response->status);
     }
 
-    /** @test
+    /**
+     * @test
      *
      *
      * @dataProvider availableRepositories
@@ -186,7 +188,8 @@ class ExpoControllerTest extends TestCase
         }
     }
 
-    /** @test
+    /**
+     * @test
      *
      * @param $expoRepository
      *
@@ -238,7 +241,6 @@ class ExpoControllerTest extends TestCase
      * Mocks a request for the ExpoController.
      *
      * @param $data
-     *
      * @return \Mockery\MockInterface
      */
     public function mockRequest($data)
@@ -251,7 +253,6 @@ class ExpoControllerTest extends TestCase
 
     /**
      * @param  bool  $fails
-     *
      * @return \Mockery\MockInterface
      */
     public function mockValidator(bool $fails)

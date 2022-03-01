@@ -82,7 +82,6 @@ class ExpoPushNotificationsServiceProvider extends ServiceProvider
      * Publishes the migration files needed in the package.
      *
      * @param  ExpoRepository  $repository
-     *
      * @return void
      */
     private function shouldPublishMigrations(ExpoRepository $repository)
