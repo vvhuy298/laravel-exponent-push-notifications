@@ -38,10 +38,9 @@ class ExpoChannel
      *
      * @param  mixed  $notifiable
      * @param  \Illuminate\Notifications\Notification  $notification
+     * @return void
      *
      * @throws CouldNotSendNotification
-     *
-     * @return void
      */
     public function send($notifiable, Notification $notification)
     {
@@ -67,7 +66,6 @@ class ExpoChannel
      * Get the interest name for the notifiable.
      *
      * @param $notifiable
-     *
      * @return string
      */
     public function interestName($notifiable)
