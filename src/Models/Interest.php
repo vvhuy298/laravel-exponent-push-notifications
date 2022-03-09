@@ -38,6 +38,11 @@ class Interest extends Model
     public $timestamps = false;
 
     /**
+     * Table doesn't have an incrementing ID
+     */
+    public $incrementing = false;
+
+    /**
      * Interest constructor.
      *
      * @param  array  $attributes
